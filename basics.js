@@ -1,0 +1,14 @@
+"use strict";
+let username = "Prashant";
+let age = 22;
+let isLearning = true;
+console.log(username);
+console.log(age);
+console.log(isLearning);
+let movieTitle = "Avenger";
+let ticketPrice = 300;
+let isAvailable = true;
+console.log(movieTitle);
+console.log(ticketPrice);
+console.log(isAvailable);
+ticketPrice = 500;
