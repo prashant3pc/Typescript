@@ -56,6 +56,11 @@ function calculatePrice(price: number, discount?: number): number {
 
   return price;
 }
-
 console.log(calculatePrice(500));
 console.log(calculatePrice(500, 100));
+
+// Arrays in TypeScript
+const genres: string[] = ["action", "thriller", "comedy"];
+genres.push("sci-fi");
+// genres.push("100"); // Error: number is not a string
+console.log(genres);
