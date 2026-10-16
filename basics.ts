@@ -48,12 +48,14 @@ function displayBookingId(id: string | number): string | number {
 console.log(displayBookingId("BK101"));
 console.log(displayBookingId("202"));
 
+//Optional parameters
 function calculatePrice(price: number, discount?: number): number {
   if (discount !== undefined) {
     return price - discount;
   }
-  calculatePrice(500);
-  console.log(calculatePrice);
-  calculatePrice(500, 100);
-  console.log(calculatePrice);
+
+  return price;
 }
+
+console.log(calculatePrice(500));
+console.log(calculatePrice(500, 100));
