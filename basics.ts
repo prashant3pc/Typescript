@@ -60,7 +60,15 @@ console.log(calculatePrice(500));
 console.log(calculatePrice(500, 100));
 
 // Arrays in TypeScript
+const prices: number[] = [500, 700, 900];
+
+prices.push(1000); // Allowed
+// prices.push("cheap"); // Error: string is not a number
+
+console.log(prices);
+
+// Arrays in TypeScript
 const genres: string[] = ["action", "thriller", "comedy"];
 genres.push("sci-fi");
-// genres.push("100"); // Error: number is not a string
+// genres.push(100); // Error: number is not a string
 console.log(genres);
