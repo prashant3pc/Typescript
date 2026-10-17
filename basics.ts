@@ -72,3 +72,16 @@ const genres: string[] = ["action", "thriller", "comedy"];
 genres.push("sci-fi");
 // genres.push(100); // Error: number is not a string
 console.log(genres);
+
+// Object types in TypeScript
+const user: {
+  name: string;
+  age: number;
+  isActive: boolean;
+} = {
+  name: "Prashant",
+  age: 22,
+  isActive: true,
+};
+console.log(user.name);
+console.log(user.age);
