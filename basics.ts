@@ -61,10 +61,8 @@ console.log(calculatePrice(500, 100));
 
 // Arrays in TypeScript
 const prices: number[] = [500, 700, 900];
-
 prices.push(1000); // Allowed
 // prices.push("cheap"); // Error: string is not a number
-
 console.log(prices);
 
 // Arrays in TypeScript
@@ -85,3 +83,22 @@ const user: {
 };
 console.log(user.name);
 console.log(user.age);
+
+// Lesson: Type aliases --- Problem we're solving: Imagine you create 10 movie objects. Each one needs a title, duration, and price. Do you want to write the same object type definition 10 times? No. A type alias lets us define it once and reuse it.
+type User = {
+  name: string;
+  age: number;
+  isActive: boolean;
+};
+const user1: User = {
+  name: "Prashant ",
+  age: 22,
+  isActive: true,
+};
+const user2: User = {
+  name: "Puspa",
+  age: 22,
+  isActive: false,
+};
+console.log(user1.name);
+console.log(user2.isActive);
