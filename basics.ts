@@ -118,4 +118,15 @@ const users1: Users = {
   age: 22,
   isActive: true,
 };
-displayUser(user1);
+displayUser(users1);
+
+// TypeScript interface.
+interface Movie {
+  title: string;
+  price: number;
+}
+const movie: Movie = {
+  title: "Avengers",
+  price: 500,
+};
+console.log(movie.title);
