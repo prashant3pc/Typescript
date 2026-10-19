@@ -102,3 +102,20 @@ const user2: User = {
 };
 console.log(user1.name);
 console.log(user2.isActive);
+
+// Lesson: Passing objects into functions
+type Users = {
+  name: string;
+  age: number;
+  isActive: boolean;
+};
+function displayUser(user: Users): void {
+  console.log(user.name);
+  console.log(user.isActive);
+}
+const users1: Users = {
+  name: "Prashant ",
+  age: 22,
+  isActive: true,
+};
+displayUser(user1);
