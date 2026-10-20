@@ -130,3 +130,33 @@ const movie: Movie = {
   price: 500,
 };
 console.log(movie.title);
+
+// Optional properties in objects
+// trailerUrl?: string — optional property. It can be provided or left out.
+// movie1 has no trailerUrl, and that's allowed.
+// movie2 includes trailerUrl, which is also allowed.
+type Movies = {
+  title: string;
+  price: number;
+  trailerUrl?: string;
+};
+const movie1: Movies = {
+  title: "Avengers",
+  price: 500,
+};
+const movie2: Movies = {
+  title: "Your Name",
+  price: 400,
+  trailerUrl: "https://example.com/trailer",
+};
+console.log(movie1.title);
+console.log(movie2.trailerUrl);
+
+// Next concept: Type narrowing
+function displayId(id: string | number): void {
+  if (typeof id === "string") {
+    console.log(id.toUpperCase());
+  } else {
+    console.log(id.toFixed(0));
+  }
+}
