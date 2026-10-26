@@ -160,3 +160,5 @@ function displayId(id: string | number): void {
     console.log(id.toFixed(0));
   }
 }
+displayId("BK101");
+displayId(123.7);
